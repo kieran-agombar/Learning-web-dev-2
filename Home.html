@@ -4,55 +4,170 @@
         <meta charset="UTF-8">
         <title>Home Page</title>
         <style>
+            /* basic reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
             body {
-                font-family: ARial, sans-serif;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.6;
+                background-color: #d3d3d3;
+            }
+
+            /* navigation styling */
+            .nav-container {
+                background-color: #333;
+                padding: 1rem 0;
+                position: sticky;
+                top: 0;
+            }
+
+            .main-nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+
+            .main-nav a {
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                transition: color 0.3s ease;
+            }
+
+            .main-nav a:hover {
+                color: #ffd700;
+            }
+
+            /* header styling */
+            .header {
+                text-align:  center;
+                padding: 3rem 1rem;
+                background-color: #fff;
+                margin-bottom: 2rem;
+            }
+
+            .header h1 {
+                color: #333;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .subtitle {
+                color: #666;
+                font-size: 1.2rem;
+            }
+
+            /* main content styling */
+            .main-content {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 1rem;
+            }
+
+            .about-section, .services-section, .contact-section {
                 max-width: 800px;
                 margin: 0 auto;
-                padding: 20px;
-                background-color: #f0f0f0;
-            }
-
-            h1 {
-                color: #2c3e50;
-                text-align: center;
-            }
-
-            img {
-                max-width: 30%;
-                height: auto;
-                display: block;
-                margin: 20px auto;
+                background-color: white;
+                padding: 2rem;
+                margin-bottom: 2rem;
                 border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
 
-            a {
-                color: #3498db;
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
-            p {
-                line-height: 1.6;
+            h2 {
                 color: #333;
+                margin-bottom: 1rem;
+                font-size: 1.8rem;
             }
+
+            /* text formatting */
+            .highlight {
+                background-color: #ffd700;
+                padding: 0.2rem 0.5rem;
+                border-radius: 4px;
+            }
+
+            em {
+                color: #666;
+                font-style: italic;
+            }
+
+            .email {
+                color: #0066cc;
+                font-weight: bold;
+            }
+
+            /*footer styling*/
+            .footer {
+                text-align: center;
+                padding: 2rem;
+                background-color: #333;
+                color: white;
+                margin-top: 2rem;
+            }
+
+
+
+
+
+            
         </style>
 </head>
 
     <body>
-        <h1>This is my Profile</h1>
-        <img    src=images/defaultpfp.png 
-                alt="where a picture of me or what I use as my pfp would go here"
-                >
+        <!--The navigation-->
+        <div class="nav-container">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+<!--Header-->
+        <div class="header">
+            <h1>Welcome to my Profile</h1>
+                <div>
+                    <img src="images/defaultpfp.png" width="200px" height="200px">
+                </div>
+            <p class="subtitle">Learning <em>HTML</em> and <em>CSS</em></p>
+        </div>
 
+       
 
-        <h2>About me</h2>
-        <p>Hello, I am learning web development and I will be building off of this page as I learn new way to shape and form a website.</p><br>
+<!--Main content-->
+    <div class="main-content">
+        <div class="about-section" id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my Profile. Here you will find <span style="font-size: 1.5em;">everything</span> you need to know about me.</p>
+        </div>
+    </div>
 
-        <h2>Here is where you can find me:</h2>
-        <a href="https://github.com/kieran-agombar" target="_blank">My GitHub</a><br>
-        <a href="mailto:kieranagombar99@gmail.com" target="_blank">My Email</a>
+    <div class="services-section" id="services">
+        <h2>Our Services</h2>
+        <p>We specialise in:</p>
+        <ul>
+            <li><span class="highlight">Web Design</span></li>
+            <li><em>Content Creation</em></li>
+            <li><b>Digital Marketing</b></li>
+        </ul>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch: <span class="email">kieranagombar99@gmail.com</span></p>
+    </div>
+
+    <!--Footer section-->
+    <div class="footer">
+        <p>&copy; 2024 My Website</p>
+    </div>
     </body>
 </html>
