@@ -2,121 +2,9 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
         <title>Home Page</title>
-        <style>
-            /* basic reset */
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
 
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-                line-height: 1.6;
-                background-color: #d3d3d3;
-            }
-
-            /* navigation styling */
-            .nav-container {
-                background-color: #333;
-                padding: 1rem 0;
-                position: sticky;
-                top: 0;
-            }
-
-            .main-nav ul {
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                gap: 2rem;
-            }
-
-            .main-nav a {
-                color: white;
-                text-decoration: none;
-                padding: 0.5rem 1rem;
-                transition: color 0.3s ease;
-            }
-
-            .main-nav a:hover {
-                color: #ffd700;
-            }
-
-            /* header styling */
-            .header {
-                text-align:  center;
-                padding: 3rem 1rem;
-                background-color: #fff;
-                margin-bottom: 2rem;
-            }
-
-            .header h1 {
-                color: #333;
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-            }
-
-            .subtitle {
-                color: #666;
-                font-size: 1.2rem;
-            }
-
-            /* main content styling */
-            .main-content {
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 0 1rem;
-            }
-
-            .about-section, .services-section, .contact-section {
-                max-width: 800px;
-                margin: 0 auto;
-                background-color: white;
-                padding: 2rem;
-                margin-bottom: 2rem;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-
-            h2 {
-                color: #333;
-                margin-bottom: 1rem;
-                font-size: 1.8rem;
-            }
-
-            /* text formatting */
-            .highlight {
-                background-color: #ffd700;
-                padding: 0.2rem 0.5rem;
-                border-radius: 4px;
-            }
-
-            em {
-                color: #666;
-                font-style: italic;
-            }
-
-            .email {
-                color: #0066cc;
-                font-weight: bold;
-            }
-
-            /*footer styling*/
-            .footer {
-                text-align: center;
-                padding: 2rem;
-                background-color: #333;
-                color: white;
-                margin-top: 2rem;
-            }
-
-
-
-
-
-            
-        </style>
 </head>
 
     <body>
@@ -151,8 +39,8 @@
     </div>
 
     <div class="services-section" id="services">
-        <h2>Our Services</h2>
-        <p>We specialise in:</p>
+        <h2>My Services</h2>
+        <p>I specialise in:</p>
         <ul>
             <li><span class="highlight">Web Design</span></li>
             <li><em>Content Creation</em></li>
@@ -160,8 +48,16 @@
         </ul>
     </div>
 
+    <div class="test-section">
+        <h3>Test section</h3>
+        <p>This is <span style="color: #ff6b6b;">coloured text</span> and <span style="font-weight: bold;">bold text</span></p>
+        <p class="p2">This text is in the center</p>
+        <p class="p3">This text is on the right</p>
+        <p>This is <span style="text-decoration: underline;">underlined</span> and <span style="text-decoration: line-through;">line-through</span> text.</p>
+    </div>
+
     <div class="contact-section" id="contact">
-        <h2>Contact Us</h2>
+        <h2>Contact me</h2>
         <p>Get in touch: <span class="email">kieranagombar99@gmail.com</span></p>
     </div>
 
